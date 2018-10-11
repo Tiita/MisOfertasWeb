@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="37ce6aedc6bf446e82e345b5d5092ea4" Name="Diagram1">
+        <EntityTypeShape EntityType="ModeloMisOfertas.CATGORIAPRODUCTO" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.COMUNA" Width="1.875" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.EMPRESA" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.MARCA" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.OFERTA" Width="2.125" PointX="5.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.PRIORIDAD" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.PRODUCTO" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.REGION" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.RUBROPRODUCTO" Width="2" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.TICKETDESCUENTO" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.TIENDA" Width="1.875" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.TIENDA_PRODUCO" Width="1.875" PointX="8.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.TIPOUSUARIO" Width="1.875" PointX="9.625" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.USUARIO" Width="2" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModeloMisOfertas.VALORACION" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ModeloMisOfertas.COMUNA_REGION_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

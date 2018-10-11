@@ -43,7 +43,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,15 +74,92 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Models\ModeloOfertas.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModeloOfertas.Context.cs</LastGenOutput>
+      <DependentUpon>ModeloOfertas.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ModeloOfertas.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloOfertas.edmx</DependentUpon>
+      <LastGenOutput>ModeloOfertas.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CATGORIAPRODUCTO.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\COMUNA.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EMPRESA.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MARCA.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModeloOfertas.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloOfertas.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModeloOfertas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModeloOfertas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloOfertas.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OFERTA.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PRIORIDAD.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PRODUCTO.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\REGION.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RUBROPRODUCTO.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TICKETDESCUENTO.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TIENDA.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TIENDA_PRODUCO.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TIPOUSUARIO.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\USUARIO.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VALORACION.cs">
+      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="Models\ModeloOfertas.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeloOfertas.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ModeloOfertas.edmx.diagram">
+      <DependentUpon>ModeloOfertas.edmx</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -87,7 +170,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
