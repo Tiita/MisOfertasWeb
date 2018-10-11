@@ -13,10 +13,10 @@ namespace MisOfertasWeb.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class EntitiesOfertas : DbContext
+    public partial class EntitiesMisOfertas : DbContext
     {
-        public EntitiesOfertas()
-            : base("name=EntitiesOfertas")
+        public EntitiesMisOfertas()
+            : base("name=EntitiesMisOfertas")
         {
         }
     
@@ -25,20 +25,20 @@ namespace MisOfertasWeb.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<CATGORIAPRODUCTO> CATGORIAPRODUCTO { get; set; }
-        public DbSet<COMUNA> COMUNA { get; set; }
-        public DbSet<EMPRESA> EMPRESA { get; set; }
-        public DbSet<MARCA> MARCA { get; set; }
-        public DbSet<OFERTA> OFERTA { get; set; }
-        public DbSet<PRIORIDAD> PRIORIDAD { get; set; }
-        public DbSet<PRODUCTO> PRODUCTO { get; set; }
-        public DbSet<REGION> REGION { get; set; }
-        public DbSet<RUBROPRODUCTO> RUBROPRODUCTO { get; set; }
-        public DbSet<TICKETDESCUENTO> TICKETDESCUENTO { get; set; }
-        public DbSet<TIENDA> TIENDA { get; set; }
+        public DbSet<CATGORIAPRODUCTO> CATGORIAPRODUCTOes { get; set; }
+        public DbSet<COMUNA> COMUNAs { get; set; }
+        public DbSet<EMPRESA> EMPRESAs { get; set; }
+        public DbSet<MARCA> MARCAs { get; set; }
+        public DbSet<OFERTA> OFERTAs { get; set; }
+        public DbSet<PRIORIDAD> PRIORIDADs { get; set; }
+        public DbSet<PRODUCTO> PRODUCTOes { get; set; }
+        public DbSet<REGION> REGIONs { get; set; }
+        public DbSet<RUBROPRODUCTO> RUBROPRODUCTOes { get; set; }
+        public DbSet<TICKETDESCUENTO> TICKETDESCUENTOes { get; set; }
+        public DbSet<TIENDA> TIENDAs { get; set; }
         public DbSet<TIENDA_PRODUCO> TIENDA_PRODUCO { get; set; }
-        public DbSet<TIPOUSUARIO> TIPOUSUARIO { get; set; }
-        public DbSet<USUARIO> USUARIO { get; set; }
-        public DbSet<VALORACION> VALORACION { get; set; }
+        public DbSet<TIPOUSUARIO> TIPOUSUARIOs { get; set; }
+        public DbSet<USUARIO> USUARIOs { get; set; }
+        public DbSet<VALORACION> VALORACIONs { get; set; }
     }
 }

@@ -76,8 +76,8 @@
     <Content Include="Global.asax" />
     <Content Include="Models\ModeloOfertas.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModeloOfertas.Context.cs</LastGenOutput>
       <DependentUpon>ModeloOfertas.edmx</DependentUpon>
+      <LastGenOutput>ModeloOfertas.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\ModeloOfertas.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
