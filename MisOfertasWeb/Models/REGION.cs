@@ -16,12 +16,12 @@ namespace MisOfertasWeb.Models
     {
         public REGION()
         {
-            this.COMUNAs = new HashSet<COMUNA>();
+            this.COMUNA = new HashSet<COMUNA>();
         }
     
         public decimal ID_REGION { get; set; }
         public string NOMBRE_REGION { get; set; }
     
-        public virtual ICollection<COMUNA> COMUNAs { get; set; }
+        public virtual ICollection<COMUNA> COMUNA { get; set; }
     }
 }

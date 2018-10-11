@@ -14,10 +14,18 @@ namespace MisOfertasWeb.Models
     
     public partial class COMUNA
     {
+        public COMUNA()
+        {
+            this.TIENDA = new HashSet<TIENDA>();
+            this.USUARIO = new HashSet<USUARIO>();
+        }
+    
         public decimal ID_COMUNA { get; set; }
         public string NOMBRE_COMUNA { get; set; }
         public decimal REGION_ID_REGION { get; set; }
     
         public virtual REGION REGION { get; set; }
+        public virtual ICollection<TIENDA> TIENDA { get; set; }
+        public virtual ICollection<USUARIO> USUARIO { get; set; }
     }
 }

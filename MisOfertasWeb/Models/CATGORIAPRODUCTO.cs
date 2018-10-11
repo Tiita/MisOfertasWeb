@@ -14,7 +14,14 @@ namespace MisOfertasWeb.Models
     
     public partial class CATGORIAPRODUCTO
     {
+        public CATGORIAPRODUCTO()
+        {
+            this.PRODUCTO = new HashSet<PRODUCTO>();
+        }
+    
         public decimal ID_CATEGORIAPRODUCTO { get; set; }
         public string NOMBRE_CATEGORIAPROD { get; set; }
+    
+        public virtual ICollection<PRODUCTO> PRODUCTO { get; set; }
     }
 }

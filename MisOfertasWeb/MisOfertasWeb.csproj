@@ -74,15 +74,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Models\ModeloOfertas.Context.tt">
+    <Content Include="Models\ModelOfertas.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModeloOfertas.edmx</DependentUpon>
-      <LastGenOutput>ModeloOfertas.Context.cs</LastGenOutput>
+      <DependentUpon>ModelOfertas.edmx</DependentUpon>
+      <LastGenOutput>ModelOfertas.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ModeloOfertas.tt">
+    <Content Include="Models\ModelOfertas.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModeloOfertas.edmx</DependentUpon>
-      <LastGenOutput>ModeloOfertas.cs</LastGenOutput>
+      <DependentUpon>ModelOfertas.edmx</DependentUpon>
+      <LastGenOutput>ModelOfertas.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -97,76 +97,73 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Models\CATGORIAPRODUCTO.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\COMUNA.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\EMPRESA.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MARCA.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModeloOfertas.Context.cs">
+    <Compile Include="Models\ModelOfertas.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloOfertas.Context.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModeloOfertas.cs">
+    <Compile Include="Models\ModelOfertas.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModeloOfertas.Designer.cs">
+    <Compile Include="Models\ModelOfertas.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModeloOfertas.edmx</DependentUpon>
+      <DependentUpon>ModelOfertas.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\OFERTA.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PRIORIDAD.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PRODUCTO.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\REGION.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\RUBROPRODUCTO.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TICKETDESCUENTO.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TIENDA.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TIENDA_PRODUCO.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TIPOUSUARIO.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\USUARIO.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\VALORACION.cs">
-      <DependentUpon>ModeloOfertas.tt</DependentUpon>
+      <DependentUpon>ModelOfertas.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Models\ModeloOfertas.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModeloOfertas.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\ModeloOfertas.edmx.diagram">
-      <DependentUpon>ModeloOfertas.edmx</DependentUpon>
-    </Content>
     <Content Include="MasterPage.Master" />
+    <EntityDeploy Include="Models\ModelOfertas.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelOfertas.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ModelOfertas.edmx.diagram">
+      <DependentUpon>ModelOfertas.edmx</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

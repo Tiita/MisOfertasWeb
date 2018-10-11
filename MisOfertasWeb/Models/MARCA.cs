@@ -14,7 +14,14 @@ namespace MisOfertasWeb.Models
     
     public partial class MARCA
     {
+        public MARCA()
+        {
+            this.PRODUCTO = new HashSet<PRODUCTO>();
+        }
+    
         public decimal ID_MARCA { get; set; }
         public string NOMBRE_MARCA { get; set; }
+    
+        public virtual ICollection<PRODUCTO> PRODUCTO { get; set; }
     }
 }

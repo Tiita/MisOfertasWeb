@@ -20,5 +20,8 @@ namespace MisOfertasWeb.Models
         public decimal NUMERO_BOLETA { get; set; }
         public Nullable<decimal> USUARIO_ID_USUARIO { get; set; }
         public Nullable<decimal> OFERTA_ID_OFERTA { get; set; }
+    
+        public virtual OFERTA OFERTA { get; set; }
+        public virtual USUARIO USUARIO { get; set; }
     }
 }

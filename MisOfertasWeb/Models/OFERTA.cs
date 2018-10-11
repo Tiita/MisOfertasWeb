@@ -14,6 +14,12 @@ namespace MisOfertasWeb.Models
     
     public partial class OFERTA
     {
+        public OFERTA()
+        {
+            this.PRODUCTO1 = new HashSet<PRODUCTO>();
+            this.VALORACION = new HashSet<VALORACION>();
+        }
+    
         public decimal ID_OFERTA { get; set; }
         public decimal MAXIMO_PRO { get; set; }
         public decimal MINIMO_PRO { get; set; }
@@ -21,5 +27,9 @@ namespace MisOfertasWeb.Models
         public System.DateTime FECHA_REGISTRO { get; set; }
         public decimal PORCENTAJE_DESCUENTO { get; set; }
         public decimal PRODUCTO_ID_PRODUCTO { get; set; }
+    
+        public virtual PRODUCTO PRODUCTO { get; set; }
+        public virtual ICollection<PRODUCTO> PRODUCTO1 { get; set; }
+        public virtual ICollection<VALORACION> VALORACION { get; set; }
     }
 }

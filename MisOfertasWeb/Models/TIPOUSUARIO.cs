@@ -14,8 +14,15 @@ namespace MisOfertasWeb.Models
     
     public partial class TIPOUSUARIO
     {
+        public TIPOUSUARIO()
+        {
+            this.USUARIO = new HashSet<USUARIO>();
+        }
+    
         public decimal ID_TIPOUSUARIO { get; set; }
         public string NOMBRE_TIPOUSUARIO { get; set; }
         public string DESCRIPCION { get; set; }
+    
+        public virtual ICollection<USUARIO> USUARIO { get; set; }
     }
 }

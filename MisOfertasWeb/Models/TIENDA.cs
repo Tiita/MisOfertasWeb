@@ -14,11 +14,22 @@ namespace MisOfertasWeb.Models
     
     public partial class TIENDA
     {
+        public TIENDA()
+        {
+            this.USUARIO = new HashSet<USUARIO>();
+            this.PRODUCTO = new HashSet<PRODUCTO>();
+        }
+    
         public decimal ID_TIENDA { get; set; }
         public string NOMBRE_TIENDA { get; set; }
         public string DIRECCION_TIENDA { get; set; }
         public string TELEFONO_TIENDA { get; set; }
         public decimal COMUNA_ID_COMUNA { get; set; }
         public decimal EMPRESA_ID_EMPRESA { get; set; }
+    
+        public virtual COMUNA COMUNA { get; set; }
+        public virtual EMPRESA EMPRESA { get; set; }
+        public virtual ICollection<USUARIO> USUARIO { get; set; }
+        public virtual ICollection<PRODUCTO> PRODUCTO { get; set; }
     }
 }

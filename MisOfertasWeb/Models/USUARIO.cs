@@ -14,6 +14,11 @@ namespace MisOfertasWeb.Models
     
     public partial class USUARIO
     {
+        public USUARIO()
+        {
+            this.VALORACION = new HashSet<VALORACION>();
+        }
+    
         public decimal ID_USUARIO { get; set; }
         public string NOMBRE_USUARIO { get; set; }
         public string APEPA_USUARIO { get; set; }
@@ -23,11 +28,18 @@ namespace MisOfertasWeb.Models
         public string DIRECCION_USUARIO { get; set; }
         public string TELEFONO_USUARIO { get; set; }
         public string PASSWORD_USUARIO { get; set; }
-        public Nullable<decimal> PUNTOS_USUARIO { get; set; }
-        public Nullable<decimal> TIPOUSUARIO_ID_TIPOUSUARIO { get; set; }
+        public decimal PUNTOS_USUARIO { get; set; }
+        public decimal TIPOUSUARIO_ID_TIPOUSUARIO { get; set; }
         public decimal COMUNA_ID_COMUNA { get; set; }
-        public Nullable<decimal> PRIORIDAD_ID_VISITA { get; set; }
-        public Nullable<decimal> TIENDA_ID_TIENDA { get; set; }
-        public Nullable<decimal> TICKETDESCUENTO_ID_TICKET { get; set; }
+        public decimal PRIORIDAD_ID_VISITA { get; set; }
+        public decimal TIENDA_ID_TIENDA { get; set; }
+        public decimal TICKETDESCUENTO_ID_TICKET { get; set; }
+    
+        public virtual COMUNA COMUNA { get; set; }
+        public virtual PRIORIDAD PRIORIDAD { get; set; }
+        public virtual TICKETDESCUENTO TICKETDESCUENTO { get; set; }
+        public virtual TIENDA TIENDA { get; set; }
+        public virtual TIPOUSUARIO TIPOUSUARIO { get; set; }
+        public virtual ICollection<VALORACION> VALORACION { get; set; }
     }
 }

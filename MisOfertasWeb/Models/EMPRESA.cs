@@ -14,9 +14,16 @@ namespace MisOfertasWeb.Models
     
     public partial class EMPRESA
     {
+        public EMPRESA()
+        {
+            this.TIENDA = new HashSet<TIENDA>();
+        }
+    
         public decimal ID_EMPRESA { get; set; }
         public string NOMBRE_EMPRESA { get; set; }
         public string RUT_EMPRESA { get; set; }
         public string GIRO { get; set; }
+    
+        public virtual ICollection<TIENDA> TIENDA { get; set; }
     }
 }

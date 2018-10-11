@@ -14,6 +14,12 @@ namespace MisOfertasWeb.Models
     
     public partial class PRODUCTO
     {
+        public PRODUCTO()
+        {
+            this.OFERTA = new HashSet<OFERTA>();
+            this.TIENDA = new HashSet<TIENDA>();
+        }
+    
         public decimal ID_PRODUCTO { get; set; }
         public string NOMBRE_PRODUCTO { get; set; }
         public decimal PRECIO_PRODUCTO { get; set; }
@@ -24,5 +30,12 @@ namespace MisOfertasWeb.Models
         public decimal MARCA_ID_MARCA { get; set; }
         public decimal CATPROD_ID_CATPROD { get; set; }
         public decimal OFERTA_ID_OFERTA { get; set; }
+    
+        public virtual CATGORIAPRODUCTO CATGORIAPRODUCTO { get; set; }
+        public virtual MARCA MARCA { get; set; }
+        public virtual ICollection<OFERTA> OFERTA { get; set; }
+        public virtual OFERTA OFERTA1 { get; set; }
+        public virtual RUBROPRODUCTO RUBROPRODUCTO { get; set; }
+        public virtual ICollection<TIENDA> TIENDA { get; set; }
     }
 }

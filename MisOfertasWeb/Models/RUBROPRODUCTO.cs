@@ -14,8 +14,15 @@ namespace MisOfertasWeb.Models
     
     public partial class RUBROPRODUCTO
     {
+        public RUBROPRODUCTO()
+        {
+            this.PRODUCTO = new HashSet<PRODUCTO>();
+        }
+    
         public decimal ID_RUBRO { get; set; }
         public string NOMBRE_RUBRO { get; set; }
         public string DESCRIPCION { get; set; }
+    
+        public virtual ICollection<PRODUCTO> PRODUCTO { get; set; }
     }
 }
