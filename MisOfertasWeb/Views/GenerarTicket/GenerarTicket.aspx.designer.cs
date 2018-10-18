@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MisOfertasWeb
+namespace MisOfertasWeb.Views.GenerarTicket
 {
 
 
-    public partial class ConsultarPuntos
+    public partial class GenerarTicket
     {
     }
 }
